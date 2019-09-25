@@ -1,7 +1,7 @@
-name:                lambdacube-gl
+name:                lambdacube-gl43
 version:             0.5.3.0
-synopsis:            OpenGL 3.3 Core Profile backend for LambdaCube 3D
-description:         OpenGL 3.3 Core Profile backend for LambdaCube 3D
+synopsis:            OpenGL 4.3 Core Profile backend for LambdaCube 3D
+description:         OpenGL 4.3 Core Profile backend for LambdaCube 3D
 homepage:            http://lambdacube3d.com
 license:             BSD3
 license-file:        LICENSE
@@ -36,7 +36,7 @@ Flag testclient
 
 source-repository head
   type:     git
-  location: https://github.com/lambdacube3d/lambdacube-gl
+  location: https://github.com/davidabernado/lambdacube-gl
 
 library
   exposed-modules:
@@ -81,7 +81,7 @@ executable lambdacube-gl-hello
     JuicyPixels >=3.2 && <3.3,
     aeson >= 1.1.2,
     GLFW-b >= 1.4,
-    lambdacube-gl,
+    lambdacube-gl43,
     lambdacube-ir == 0.3.*
 
 executable lambdacube-gl-pickint
@@ -102,7 +102,7 @@ executable lambdacube-gl-pickint
     base,
     bytestring >=0.10,
     containers >=0.5,
-    lambdacube-gl,
+    lambdacube-gl43,
     lambdacube-ir,
     vect,
     vector >=0.12
@@ -129,7 +129,7 @@ executable lambdacube-gl-hello-obj
     aeson >= 1.1.2,
     GLFW-b >= 1.4,
     wavefront >= 0.7 && <1,
-    lambdacube-gl,
+    lambdacube-gl43,
     lambdacube-ir == 0.3.*
 
 executable lambdacube-gl-test-client
@@ -160,5 +160,5 @@ executable lambdacube-gl-test-client
     network >= 2.6 && <2.7,
     OpenGLRaw >=3.2 && <4,
     GLFW-b >= 1.4,
-    lambdacube-gl,
+    lambdacube-gl43,
     lambdacube-ir == 0.3.*
