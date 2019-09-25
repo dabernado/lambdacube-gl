@@ -11,5 +11,5 @@ extra-deps:
     - lambdacube-ir.haskell
 
 flags:
-  lambdacube-gl:
+  lambdacube-gl43:
     example: true
